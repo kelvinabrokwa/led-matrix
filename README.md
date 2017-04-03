@@ -1,16 +1,24 @@
 # LED Matrix
 
-A suite of tools for having fun with an [Adafruit RGB LED Matrix](https://www.adafruit.com/products/1484)
+A library and web app for having fun with an [Adafruit RGB LED Matrix](https://www.adafruit.com/products/1484)
 
-### Draw
+Depends on [rpi-rgb-led-matrix](https://github.com/hzeller/rpi-rgb-led-matrix)
 
-Live draw from a web app to your display
+## Running
 
-### Text
+```sh
+# Install dependencies, build submodules, install nginx config
+make setup
 
-Text a message to your display
+# restart nginx
+sudo service nginx reload
 
-### Alexa
+# start the server
+sudo ./pyvenv/bin/python server.py
+```
 
-Alexa integration
+## Features
+- Draw: draw from a web app to your display
+- Text: render a text message
+- GIFs: Render GIFs by URL
 

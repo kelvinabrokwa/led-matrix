@@ -1,0 +1,9 @@
+/**
+ *
+ */
+html, body, input, select {
+  margin: 0;
+  padding: 10px;
+  font-family: 'Inconsolata', monospace;
+}
+
